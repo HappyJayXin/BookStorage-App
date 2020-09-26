@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Budgety</title>
+    </head>
+    <body>
+       <header class="top">
+         <div class="bookstore">
+             <div class="bookstore__title">
+                 Available Book Storage in <span class="bookstore__title--month">%month%</span>
+             </div>
+             <p class="bookstore__value--title">Total Money:</p>
+             <div class="bookstore__value--totalmoney">$ 2,345.64</div>
+
+             <div class="bookstore__count">
+             <div class="bookstore__value--title">Total Books:</div>
+                 <div class="bookstore__value--totalcount">12</div>
+             </div>
+             </div>
+
+             
+         </div>
+       </header>
+       <main class="bottom">
+         <section class="add">
+             <div class="add__container">
+                <select class="add__type">
+                    <option value="fan" selected>Fantasy</option>
+                    <option value="rom">Romance</option>
+                    <option value="cla">Classic</option>
+                </select>
+                <input type="text" class="add__bookname" placeholder="Book Name">
+                <input type="number" class="add__bookmoney" placeholder="Money">
+                <input class="add__bookdate" type="date">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                <button class="change__btn"><i class="ion-android-done"></i></button>
+                <button class="cancel__btn"><i class="ion-android-close"></i></button>
+                
+             </div>
+         </section>
+         
+         <section class="container">
+         <div class="romance">
+            <h2 class="romance__title">Romance : <span class="romance__totalmoney">$ 1,300.57</span><span class="romance__percentage">20%</span></h2>
+           
+                    <div class="romance__list">
+               
+                
+                 <!-- <div class="item clearfix" id="rom-0">
+                    <div class="item__bookname">Romeo and Juliet</div>
+                  
+                    <div class="right clearfix">
+                        <div class="item__moneydate">
+                        <div class="item__bookmoney">$ 2,100.00</div>
+                        <div class="item__bookdate">2020/09/25</div>
+                        </div>
+                        <div class="item__delete">
+                            
+                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                        
+                    </div>
+                </div> -->
+                <!-- <div class="item clearfix" id="rom-1">
+                    <div class="item__bookname">Romeo and Juliet</div>
+                  
+                    <div class="right clearfix">
+                        <div class="item__moneydate">
+                        <div class="item__bookmoney">$ 2,100.00</div>
+                        <div class="item__bookdate">2020/09/25</div>
+                        </div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>  -->
+                
+                
+            </div>
+         </div>
+
+         <div class="classic">
+               <h2 class="classic__title">Classic : <span class="classic__totalmoney">$ 1,400.84</span><span class="classic__percentage">34%</span></h2>
+                <div class="classic__list">
+       
+                    <!-- <div class="item clearfix" id="cla-0">
+                        <div class="item__bookname">Pride and Prejudice</div>
+                      
+                        <div class="right clearfix">
+                            <div class="item__moneydate">
+                            <div class="item__bookmoney">$ 1,500.00</div>
+                            <div class="item__bookdate">2019/08/17</div>
+                            </div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="item clearfix" id="cla-1">
+                        <div class="item__bookname">Pride and Prejudice</div>
+                      
+                        <div class="right clearfix">
+                            <div class="item__moneydate">
+                            <div class="item__bookmoney">$ 1,500.00</div>
+                            <div class="item__bookdate">2019/08/17</div>
+                            </div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div> -->
+        
+             </div>
+         </div>
+
+         <div class="fantasy">
+              <h2 class="fantasy__title">Fantasy : <span class="fantasy__totalmoney">$ 1,784.87</span><span class="fantasy__percentage">16%</span></h2>
+              <div class="fantasy__list">
+       
+                <!-- <div class="item clearfix" id="fan-0">
+                    <div class="item__bookname">Harry Potter</div>
+                  
+                    <div class="right clearfix">
+                        <div class="item__moneydate">
+                        <div class="item__bookmoney">$ 1,200.87</div>
+                        <div class="item__bookdate">2017/05/19</div>
+                       </div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="item clearfix" id="fan-1">
+                    <div class="item__bookname">Harry Potter</div>
+                  
+                    <div class="right clearfix">
+                        <div class="item__moneydate">
+                        <div class="item__bookmoney">$ 1,200.87</div>
+                        <div class="item__bookdate">2017/05/19</div>
+                       </div>
+                        <div class="item__delete">
+                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                        
+                    </div>
+                </div> -->
+            
+            </div>
+         </div>
+         </section>
+       </main>
+       
+        
+       
+    </body>
+    <script src="app.js"></script>
+</html>

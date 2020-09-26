@@ -1,0 +1,378 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:#555;
+    font-family: Open Sans;
+    font-size: 16px;
+    height: 100vh;
+    font-weight: 400;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.right { display:flex; margin-left: 150px;
+width: 300px;}
+
+.rom-focus:focus { border: 1px solid #FF5049 !important; }
+.cla-focus:focus { border: 1px solid rgb(91, 75, 238) !important; }
+.fan-focus:focus { border: 1px solid rgb(246, 246, 11) !important; }
+
+.rom{ color: #FF5049 !important; }
+.cla{ color: rgb(91, 75, 238) !important; }
+.fan{ color: rgb(246, 246, 11) !important; }
+
+
+/**********************************************
+*** TOP PART
+**********************************************/
+.top{
+    border: solid black 2px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('./back.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+
+.bookstore{
+    color: #fff;
+    border: solid white 1px;
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 2px 0px 15px rgba(255,255,255,0.5);
+    background: rgba(150,150,150,0.5);
+}
+
+.bookstore__title{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom:10px;
+    font-weight: 800;
+    padding-top: 15px;
+
+}
+
+.bookstore__value--title{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bookstore__value--totalmoney{
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.bookstore__count {
+    padding: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bookstore__value--totalcount{
+    font-size: 46px;
+}
+
+.bookstore__value--totalmoney,
+.bookstore__value--totalcount{
+    letter-spacing: 2px;
+}
+
+
+/**********************************************
+*** BOTTOM PART
+**********************************************/
+
+/***** FORM *****/
+.add{
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add__type{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #e7e7e7;
+    font-size: 18px;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.add__bookname,
+.add__bookmoney{
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.add__bookname { width: 300px;}
+.add__bookmoney { width: 100px;}
+
+.add__bookdate{
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding: 8px 0;
+}
+/***** LISTS *****/
+.add__btn{
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.change__btn{
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+    display: none;
+}
+
+.cancel__btn{
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+    display: none;
+}
+
+.change .add__btn{
+    display: none;
+}
+.change .change__btn{
+    display: inline;
+}
+
+.change .cancel__btn{
+    display: inline;
+}
+
+
+.add__btn:active { transform: translateY(2px); }
+.change__btn:active { transform: translateY(2px); }
+.cancel__btn:active { transform: translateY(2px); }
+
+.add__type:focus,
+.add__bookname:focus,
+.add__bookmoney:focus,
+.add__bookdate {
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.add__btn:focus { outline: none; }
+.change__btn:focus { outline: none; }
+.cancel__btn:focus { outline: none; }
+
+.container {
+    width: 1800px;
+    margin: 60px auto;
+}
+
+.romance{
+ 
+    width: 560px;
+    float: left;
+    margin-right: 50px;
+  
+}
+
+
+.romance__percentage {
+    
+    transition: transform 0.3s;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: rgba(255, 218, 217,0.5);
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    margin-left: 20px;
+}
+
+
+.classic__percentage {
+    
+    transition: transform 0.3s;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color:rgba(174, 156, 255,0.5);
+    color:rgb(91, 75, 238);
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    margin-left: 20px;
+}
+
+.fantasy__percentage {
+    
+    transition: transform 0.3s;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: rgba(246, 246, 11,0.5);
+    color: rgba(150, 150, 11,1);
+    padding: 3px;
+    border-radius: 3px;
+    width: 32px;
+    margin-left: 20px;
+}
+
+
+.classic{
+    width: 560px;
+    float: left;
+    margin-right: 50px;
+}
+
+.fantasy{
+    width: 560px;
+    float: left;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+ 
+}
+
+
+
+.classic__title { color: rgb(91, 75, 238); }
+.romance__title { color: #FF5049; }
+.fantasy__title {color:gold;}
+
+
+.item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+}
+
+
+.item:first-child { border-top: 1px solid #e7e7e7; }
+
+
+
+.item__moneydate{
+    display: flex;
+}
+
+.item__bookname{
+    width: 200px;
+}
+
+.item__bookmoney {
+    transition: transform 0.3s;
+}
+
+.item__bookdate{
+    margin: 0 20px;
+}
+
+.romance .item__bookmoney,
+.romance .item__delete--btn,
+.romance .item__change--btn,
+.romance .item__bookdate{
+    color: #FF5049; 
+}
+
+.classic .item__bookmoney,
+.classic .item__delete--btn,
+.classic .item__change--btn,
+.classic .item__bookdate{
+    color: rgb(91, 75, 238); 
+}
+
+.fantasy .item__bookmoney,
+.fantasy .item__delete--btn,
+.fantasy .item__change--btn,
+.fantasy .item__bookdate{
+    color: gold; 
+}
+
+
+
+.item__delete--btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+
+.item__change--btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+
+.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(2px); }
+
+.item:hover .item__delete--btn { display: inline; }
+.item:hover .item__change--btn { display: inline; }
+.item:hover .item__moneydate { transform: translateX(-20px); }
