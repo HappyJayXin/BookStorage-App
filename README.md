@@ -1,6 +1,7 @@
 # BookStorage-App
 A BookStorage App which can add book item including: BookType, BookName, BookPrice, BookDate,
-and also can delete or change for each item.
+each bookitem will be stored in localStorage,
+and of course can delete or change for each of bookitem.
 
 And calculate for total cost and books, and percentage for each cost of book series.
 
