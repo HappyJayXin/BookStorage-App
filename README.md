@@ -6,3 +6,4 @@ And calculate for total cost and books, and percentage for each cost of book ser
 
 Here's the plan:
 
+https://raw.githubusercontent.com/yishao0925/BookStorage-App/master/BookStorage%20App/plan/plan1.png
