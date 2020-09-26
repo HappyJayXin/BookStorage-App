@@ -5,5 +5,4 @@ and also can delete or change for each item.
 And calculate for total cost and books, and percentage for each cost of book series.
 
 Here's the plan:
-
-https://raw.githubusercontent.com/yishao0925/BookStorage-App/master/BookStorage%20App/plan/plan1.png
+![image](https://raw.githubusercontent.com/yishao0925/BookStorage-App/master/BookStorage%20App/plan/plan1.png)
